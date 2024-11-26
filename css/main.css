@@ -1,0 +1,44 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-image: url(../image/notebook.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: overlay;
+    color: #fff;
+}
+header{
+    display: block;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+section{
+    margin: 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 30px;
+}
+h2,ul{
+    margin: 40px;
+}
+ul{
+    list-style: none;
+    margin-left: 0px;
+}
+
+#done input[type="checkbox"]:checked+span::after{
+    content: "👍";
+}
+
+#todo input[type="checkbox"]:checked+span::after{
+    content: "📆";
+}
+
+#todo input[type="checkbox"]:checked+span::after{
+    content: "🗈";
+}
